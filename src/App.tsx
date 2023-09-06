@@ -1,7 +1,4 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import "./App.css";
+// import "./App.css";
 import { Button, Checkbox, Form, Input, Image, Typography } from "antd";
 
 function App() {
@@ -19,7 +16,7 @@ function App() {
   type FieldType = {
     username?: string;
     password?: string;
-    remember?: string;
+    // remember?: string;
   };
   return (
     <div
@@ -93,6 +90,7 @@ function App() {
 
         <Form.Item<FieldType>
           style={{ width: "100%", color: "cyan" }}
+          name="password"
           rules={[
             { required: true, min: 8, message: "Please input your password!" },
           ]}
